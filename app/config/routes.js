@@ -1,10 +1,10 @@
 import { StatusBar } from 'react-native';
-import { StackNavigator } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation';
 import Home from '../screens/Home';
 import Nutrition from '../screens/Nutrition';
 import Workout from '../screens/Workout';
 
-const HomeStack = StackNavigator({
+const HomeStack = createStackNavigator({
     Home: {
         screen: Home, 
     },
@@ -15,7 +15,7 @@ const HomeStack = StackNavigator({
         screen: Workout,
     },
 });
-export default StackNavigator({
+export default createStackNavigator({
     Home: {
         screen: HomeStack,
     },
