@@ -1,27 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { View, Text, StatusBar, Container } from "react-native";
+import { View, Text, StatusBar } from "react-native";
+import { Container } from '../components/Container';
 
 export default () => (
     <Container>
-        <Text>Home Screen</Text>
+        <StatusBar translucent={false} barStyle="light-content" />
     </Container>
 )
-
-// class Home extends React.Component {
-//     // static PropTypes = {
-
-//     // }
-//     render() {
-//         return (
-//             <View>
-//             <Container>
-//                 {/* <StatusBar translucent={false} barStyle="default" /> */}
-//                 <Text>Home Screen</Text>
-//             </Container>
-//             </View>
-//         );
-//     }
-// }
-
-// export default Home;
